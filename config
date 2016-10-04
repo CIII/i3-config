@@ -1,6 +1,6 @@
-set $mod Mod4
+set $mod Mod1
 
-font pango:Terminus 11px
+font pango:Terminus 30px
 
 new_window pixel 3
 focus_follows_mouse  no
@@ -22,7 +22,7 @@ floating_modifier $mod
 bindsym $mod+Return exec urxvtc
 
 # kill focused window
-bindsym $mod+c kill
+bindsym $mod+Shift+c kill
 
 # start dmenu (a program launcher)
 bindsym $mod+p exec "dmenu_run -nb black -p run"
@@ -70,30 +70,27 @@ bindsym $mod+Shift+f floating toggle
 # change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
 
-# switch to last workspace
-bindsym $mod+6 workspace back_and_forth
-
 # switch to workspace
-bindsym $mod+q workspace 1: q
-bindsym $mod+w workspace 2: w
-bindsym $mod+e workspace 3: e
-bindsym $mod+r workspace 4: r
-bindsym $mod+t workspace 5: t
-bindsym $mod+y workspace 6: y
-bindsym $mod+u workspace 7: u
-bindsym $mod+i workspace 8: i
-bindsym $mod+o workspace 9: o
+bindsym $mod+1 workspace 1: 1
+bindsym $mod+2 workspace 2: 2
+bindsym $mod+3 workspace 3: 3
+bindsym $mod+4 workspace 4: 4
+bindsym $mod+5 workspace 5: 5
+bindsym $mod+6 workspace 6: 6
+bindsym $mod+7 workspace 7: 7
+bindsym $mod+8 workspace 8: 8
+bindsym $mod+9 workspace 9: 9
 
 # move focused container to workspace
-bindsym $mod+Shift+q move container to workspace 1: q
-bindsym $mod+Shift+w move container to workspace 2: w
-bindsym $mod+Shift+e move container to workspace 3: e
-bindsym $mod+Shift+r move container to workspace 4: r
-bindsym $mod+Shift+t move container to workspace 5: t
-bindsym $mod+Shift+y move container to workspace 6: y
-bindsym $mod+Shift+u move container to workspace 7: u
-bindsym $mod+Shift+i move container to workspace 8: i
-bindsym $mod+Shift+o move container to workspace 9: o
+bindsym $mod+Shift+1 move container to workspace 1: 1
+bindsym $mod+Shift+2 move container to workspace 2: 2
+bindsym $mod+Shift+3 move container to workspace 3: 3
+bindsym $mod+Shift+4 move container to workspace 4: 4
+bindsym $mod+Shift+5 move container to workspace 5: 5
+bindsym $mod+Shift+6 move container to workspace 6: 6
+bindsym $mod+Shift+7 move container to workspace 7: 7
+bindsym $mod+Shift+8 move container to workspace 8: 8
+bindsym $mod+Shift+9 move container to workspace 9: 9
 
 bindsym $mod+z reload
 bindsym $mod+Shift+x restart
